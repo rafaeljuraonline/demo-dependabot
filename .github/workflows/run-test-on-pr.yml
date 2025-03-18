@@ -4,8 +4,8 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]  # Triggers when a PR is opened, updated, or reopened.
     paths:
-      - "javascript/package.json"  # Points to the package.json file in the javascript folder.
-      - "javascript/package-lock.json"  # Points to the package-lock.json file in the javascript folder.
+      - "package.json"  # Points to the package.json file in the javascript folder.
+      - "package-lock.json"  # Points to the package-lock.json file in the javascript folder.
 
 jobs:
   test:

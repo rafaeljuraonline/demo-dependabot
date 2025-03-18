@@ -50,7 +50,7 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "compression": "^1.7.4",
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.1.2",
     "cookie-parser": "^1.4.7",
     "email-validator-net": "^2.1.0",
     "entities": "^6.0.0",

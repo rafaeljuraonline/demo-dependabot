@@ -6,10 +6,9 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      minor-and-patch: # Grouping for minor and patch updates.
+      patch: # A separate group specifically for patch updates.
         applies-to: version-updates # Applies this group to regular version updates.
         update-types:
-          - "minor" # Includes minor version updates.
           - "patch" # Includes patch version updates.
       security-updates:  # A separate group specifically for security updates.
         applies-to: security-updates

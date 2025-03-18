@@ -1,16 +1,16 @@
----
 version: 2
 updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["minor", "major"]  # Ignore minor and major version updates
     groups:
-      patch: # A separate group specifically for patch updates.
-        applies-to: version-updates # Applies this group to regular version updates.
+      patch:
         update-types:
-          - "patch" # Includes patch version updates.
-      security-updates:  # A separate group specifically for security updates.
-        applies-to: security-updates
-        patterns:
-          - "*"
+          - "patch"  # Includes only patch version updates
+      security-updates:
+        update-types:
+          - "security"  # Includes only security updates

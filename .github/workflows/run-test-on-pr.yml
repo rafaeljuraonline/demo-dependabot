@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    if: github.actor == 'dependabot[bot]'  # This ensures the job only runs when Dependabot opens the PR.
+    # This ensures the job only runs when Dependabot opens the PR.
     runs-on: ubuntu-latest  # The environment in which to run the tests.
 
     steps:

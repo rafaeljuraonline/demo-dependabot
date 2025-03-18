@@ -16,7 +16,8 @@ updates:
           - "minor"  # Includes minor version updates.
           - "patch"  # Includes patch version updates.
       security-updates:  # A separate group specifically for security updates.
-        applies-to: security-updates  # Only applies to security-related updates.
+        patterns:
+          - "*"  # Matches all security-related updates.
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:

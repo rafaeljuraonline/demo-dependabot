@@ -2,38 +2,83 @@
 # yarn lockfile v1
 
 
-"@handsontable/formulajs@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@handsontable/formulajs/-/formulajs-2.0.2.tgz#5be4b9226cc47811f646ae46b1b985230cd82995"
-  integrity sha512-maIyMJtYjA5e/R9nyA22Qd7Yw73MBSxClJvle0a8XWAS/5l6shc/OFpQqrmwMy4IXUCmywJ9ER0gOGz/YA720w==
+axios@0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
+  integrity sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==
   dependencies:
-    bessel "^1.0.2"
-    jstat "^1.9.2"
+    follow-redirects "1.5.10"
+    is-buffer "^2.0.2"
 
-bessel@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/bessel/-/bessel-1.0.2.tgz#828812291e0b62e94959cdea43fac186e8a7202d"
-  integrity sha512-Al3nHGQGqDYqqinXhQzmwmcRToe/3WyBv4N8aZc5Pef8xw2neZlR9VPi84Sa23JtgWcucu18HxVZrnI0fn2etw==
-
-hot-formula-parser@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/hot-formula-parser/-/hot-formula-parser-3.0.2.tgz#d71f03a4ef43ba3074bde383a0e36202b5b64116"
-  integrity sha512-W/Dj/UbIyuViMIQOQD6tUEVySl7jd6ei+gfWslTiRqa4yRhkyHnIz8N4oLnqgDRhhVAQIcFF5NfNz49k4X8IxQ==
+bessel@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/bessel/-/bessel-0.2.0.tgz#13cb39cd29233219ec2da725e0ba0c66fb46b6f2"
+  integrity sha512-YSU5mD46+x1PR8uq5SUx/NbVJCSOyrmw+ybOU2IjKj8RuHFea7wWUJ33+b1sqqPj4V0uxjE3PzdaF6hTsRpRKQ==
   dependencies:
-    "@handsontable/formulajs" "^2.0.2"
-    tiny-emitter "^2.1.0"
+    voc ""
 
-jstat@^1.9.2:
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/jstat/-/jstat-1.9.3.tgz#6a0e60c3b87fd714b61e765b77fc6b035437ee34"
-  integrity sha512-/2JL4Xv6xfhN2+AEKQGTYr1LZTmBCR/5fHxJVvb9zWNsmKZfKrl3wYYK8SD/Z8kXkf+ZSusfumLZ4wDTHrWujA==
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
+  dependencies:
+    ms "2.0.0"
 
-lodash@^4.17.20:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  dependencies:
+    debug "=3.1.0"
 
-tiny-emitter@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
-  integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
+"formulajs@github:handsontable/formula.js#1.0.6":
+  version "1.0.6"
+  uid "5ab1300324b07a0cf42970fbe74c0a186333f8e9"
+  resolved "https://codeload.github.com/handsontable/formula.js/tar.gz/5ab1300324b07a0cf42970fbe74c0a186333f8e9"
+  dependencies:
+    bessel "^0.2.0"
+    jStat "^1.5.3"
+    numbro "^1.8.0"
+
+hot-formula-parser@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hot-formula-parser/-/hot-formula-parser-2.0.0.tgz#8c5c47c09487c3d1747ad542f675f95fd2ad11b9"
+  integrity sha512-gqVVN2s+7HRo/Am2KjLYRQlt5IJ+W7yBHEXaZ+/lwP3c/YxcIw13AOnZN6uwOnM/Big1k9mSyGE/IlNLA/XUcg==
+  dependencies:
+    formulajs "github:handsontable/formula.js#1.0.6"
+    tiny-emitter "^1.0.2"
+
+is-buffer@^2.0.2:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
+  integrity sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
+
+jStat@^1.5.3:
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/jStat/-/jStat-1.8.6.tgz#ab4d465b21f583d37a72ab2f97a300492da7575d"
+  integrity sha512-Oh/ePZVSoFigme69pHTQudcGh64cpNH9Lz3hBZcRJWLrDqpw7JfuYU9F3dj9py3tBYmHz7og7ZT8hXTNbYq9Rw==
+
+lodash@4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
+ms@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+  integrity sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==
+
+numbro@^1.8.0:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/numbro/-/numbro-1.11.1.tgz#e0d9ba0ddfc3ad5ac01d9558a49383db214f04be"
+  integrity sha512-qL0Etqbunz4RtPx4bNjMONe9HyUpgbrM4Sa3VpWY5oRdp9ry5DufAj6lCvnIcluRBA9QUacrllYc73QK0G6VAw==
+
+tiny-emitter@^1.0.2:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-1.2.0.tgz#6dc845052cb08ebefc1874723b58f24a648c3b6f"
+  integrity sha512-rWjF00inHeWtT5UbQYAXoMI4hL6TRMqohuKCsODyPYYmfAxqfMnXLsIeNrbdPEkNxlk++rojVilTnI9IVmEBtA==
+
+voc@:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/voc/-/voc-1.2.0.tgz#c459024531d71067c09e2c0c2bda6c2b13af32d8"
+  integrity sha512-BOuDjFFYvJdZO6e/N65AlaDItXo2TgyLjeyRYcqgAPkXpp5yTJcvkL2n+syO1r9Qc5g96tfBD2tuiMhYDmaGcA==

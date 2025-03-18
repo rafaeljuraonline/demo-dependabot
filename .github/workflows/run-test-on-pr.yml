@@ -1,0 +1,28 @@
+name: Run Tests on PR by Dependabot
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]  # Triggers when a PR is opened, updated, or reopened.
+    paths:
+      - "package.json"
+      - "package-lock.json"  # We only trigger for changes in these files.
+
+jobs:
+  test:
+    if: github.actor == 'dependabot[bot]'  # This ensures the job only runs when Dependabot opens the PR.
+    runs-on: ubuntu-latest  # The environment in which to run the tests.
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # Checks out your repository's code.
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Sets up Node.js on the runner.
+        with:
+          node-version: '20'  # Specify your Node.js version.
+
+      - name: Install dependencies
+        run: npm install  # Installs the necessary dependencies.
+
+      - name: Run tests
+        run: npx jest  # Runs Jest tests using npx.

@@ -7,10 +7,12 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["minor", "major"]  # Ignore minor and major version updates
-    groups:
-      patch:
+    groups:groups:
+      patch-updates:
+        patterns:
+          - "*"  # Groups all dependencies together
         update-types:
-          - "patch"  # Includes only patch version updates
+          - "patch"
       security-updates:
-        update-types:
-          - "security"  # Includes only security updates
+        patterns:
+          - "*"  # Groups all security updates

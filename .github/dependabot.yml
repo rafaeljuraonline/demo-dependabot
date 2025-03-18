@@ -6,7 +6,7 @@ updates:
       interval: "weekly"
     ignore:
       - dependency-name: "*"
-        update-types: ["minor", "major"]  # Ignore minor and major version updates
+        update-types: ["version-update:semver-minor", "version-update:semver-major"]  # Ignore minor and major version updates
     groups:
       patch-updates:
         patterns:
